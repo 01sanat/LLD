@@ -1,0 +1,18 @@
+1. Creational Patterns deal with object creation mechanism 
+   
+  -> Singleton : Ensures that class has only one instance and provides global point of access to that instance.
+
+  -> Factory Method : Creates Object Without specifying the exact class of object that will be created. 
+  This is especially useful when the exact class of the object is determined at runtime.
+  For example we do in backend by dynamically decides which database client to use (e.g., PostgreSQL or mysql or mongodb).
+
+  -> Builder :Unlike the Factory Method, which focuses on selecting and creating objects,
+   the Builder Pattern is about creating an object piece by piece, often providing flexibility 
+   in the construction process. It's especially useful when an object has multiple optional parameters 
+   or requires a series of steps to initialize.
+
+   How the Builder Pattern Works Here
+   1. Flexibility: allows you to set only the parameters you need
+   2. Separation of Concerns 
+   3. The chaining method (setFilters, setSorting, etc.) makes the query-building process intuitive and readable.
+
